@@ -1,0 +1,26 @@
+version: 2
+
+seeds:
+  - name: customers
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+
+models:
+  - name: stg_customers
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+
+  - name: orders_summary
+    columns:
+      - name: order_count
+        tests:
+          - not_null
+      - name: total_spent
+        tests:
+          - not_null

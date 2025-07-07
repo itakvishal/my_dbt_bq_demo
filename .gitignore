@@ -1,0 +1,5 @@
+venv/
+target/
+dbt_packages/
+*.json        # service-acct keys
+*.log
